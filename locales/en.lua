@@ -1,0 +1,17 @@
+Config.translation["en"] = {
+    ["success"] = "Success",
+    ["attention"] = "Attention",
+    ["failure"] = "Failure",
+    ["progress_label"] = "%s in progress",
+    ["progress_canceled"] = "%s has been canceled",
+    ["progress_finish"] = "%s has been finished",
+    ["textui"] = "Open Menu",
+    ["not_enough_required"] = "Not enough required item",
+    ["not_enough_cop"] = "Minimum duty cops required",
+    ["err_data"] = "Something wrong with the data",
+    ["cooking_title"] = "Cooking Menu",
+    ["crafting_title"] = "Crafting Menu",
+    ["cooking_recipe"] = "Cooking Recipe",
+    ["crafting_material"] = "Crafting Material",
+    ["item_desc"] = "Duration: %s seconds, Result: x%s",
+}
