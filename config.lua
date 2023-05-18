@@ -82,7 +82,7 @@ Config.Items = {
         item = "ammo-9", -- item name
         count = 50, -- items results count
         duration = 15, -- seconds
-        location = "public", -- location could be string or table array. 
+        location = "public", -- location could be string or table array.
         requirements = { -- item name and item count
             { item = "diamond", count = 1 },
             { item = "gold", count = 3 },

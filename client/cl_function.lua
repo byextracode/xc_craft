@@ -147,7 +147,7 @@ local function openCooking(data)
                     craftAction(data, "food")
                 end
             },
-            
+
             {
                 title = "Drink",
                 icon = "mug-hot",

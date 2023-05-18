@@ -28,7 +28,7 @@ end
 local function ValidateItem(name)
     for i = 1, #Config.Items do
         if Config.Items[i].item == name then
-            return Config.Items[i] 
+            return Config.Items[i]
         end
     end
     return nil
@@ -81,7 +81,7 @@ lib.callback.register("xc_craft:validation", function(source, data)
     if not sufficient then
         return labelText("not_enough_required")
     end
-    
+
     local timer = item.duration * 1000
     return timer
 end)
