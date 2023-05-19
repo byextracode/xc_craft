@@ -7,24 +7,6 @@ end
 
 CreateThread(fetchCop)
 
-function RemoveItem(player, requirements)
-    local hasAllItems = true
-    for i = 1, #requirements do
-        local hasItem = player.hasItem(requirements[i].item)
-        if hasItem then
-            local count = hasItem.count ~= nil and hasItem.count or hasItem.amount
-            if count < requirements[i].count then
-                hasAllItems = false
-            else
-                player.removeInventoryItem(requirements[i].item, requirements[i].count)
-            end
-        else
-            hasAllItems = false
-        end
-    end
-    return hasAllItems
-end
-
 local function ValidateItem(name)
     for i = 1, #Config.Items do
         if Config.Items[i].item == name then
@@ -45,16 +27,6 @@ local function ValidateRequirements(source, requirements)
         end
     end
     return true
-end
-
-local function WaitForProcess(source, player, timer, item, requirements)
-    CreateThread(function()
-        Wait(timer)
-        local hasAll = RemoveItem(player, item.requirements)
-        if hasAll then
-            AddItem(player, item.item, item.count)
-        end
-    end)
 end
 
 lib.callback.register("xc_craft:validation", function(source, data)
