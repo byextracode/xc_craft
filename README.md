@@ -14,6 +14,7 @@ Items crafting for fivem roleplay.
 
 ## Requirement
 - ESX
+- [ox_inventory](https://github.com/overextended/ox_inventory)
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [ox_target](https://github.com/overextended/ox_target) (optional)
 
