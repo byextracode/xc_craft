@@ -14,8 +14,8 @@ shared_script "config.lua"
 shared_script "shared.lua"
 shared_script "locales/*.lua"
 
-client_script "**/cl_*.lua"
-server_script "**/sv_*.lua"
+client_script "client/*.lua"
+server_script "server/*.lua"
 
 dependencies {
     "es_extended",
